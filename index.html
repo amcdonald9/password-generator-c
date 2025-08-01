@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Advanced Password Generator</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Advanced Password Generator 🔐</h1>
+
+    <div class="options">
+      <label>
+        Length:
+        <input type="number" id="length" min="6" max="64" value="12" />
+      </label>
+
+      <label><input type="checkbox" id="includeLower" checked /> Lowercase (a-z)</label>
+      <label><input type="checkbox" id="includeUpper" checked /> Uppercase (A-Z)</label>
+      <label><input type="checkbox" id="includeNumbers" checked /> Numbers (0-9)</label>
+      <label><input type="checkbox" id="includeSymbols" checked /> Symbols (!@#$%)</label>
+      <label><input type="checkbox" id="excludeAmbiguous" /> Exclude Ambiguous (0OIl1)</label>
+    </div>
+
+    <button id="generateBtn">Generate Password</button>
+
+    <div class="result">
+      <textarea id="passwordOutput" readonly rows="3" placeholder="Your password will appear here"></textarea>
+      <button id="copyBtn" title="Copy to clipboard">📋 Copy</button>
+    </div>
+
+    <div id="strengthMeter">
+      <div id="strengthBar"></div>
+      <p id="strengthText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
