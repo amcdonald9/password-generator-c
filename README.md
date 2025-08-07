@@ -14,6 +14,11 @@ This project is a **Complex Password Generator** built using HTML, CSS, and Java
 - Responsive and user-friendly UI using Tailwind CSS
 - Input validation and helpful user feedback
 
+## Demo
+
+https://amcdonald9.github.io/password-generator-c/
+
+
 ## Installation
 
 No special installation needed! Just clone or download the repo and open `index.html` in your browser.
